@@ -1,0 +1,686 @@
+@font-face {
+    font-family: 'Eras Light ITC';
+    src: url(../fonts/ErasLightITC.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+src: url(../fonts/GOTHIC.TTF) format('truetype');
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+nav {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: 'Eras Light ITC';
+    position: relative;
+    left: 30%;
+    top: 45%;
+    width: 60%;
+}
+
+nav h4 {
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.background {
+    background: url(../images/Picture2.png) no-repeat scroll center;
+    background-size: contain;
+    width: 100%;
+}
+
+.banner {
+    background-color: #008CCC;
+    position: relative;
+    left: 50%;
+    width: 45%;
+    height: 650px;
+    z-index: -1;
+}
+
+.banner::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: skewX(-10deg);
+}
+
+#guidewire {
+    position: absolute;
+    right: 115%;
+    top: 20%;
+    width: 90%;
+    text-align: center;
+    font-family: 'Eras Light ITC';
+    font-size: 3em;
+    color: #ff7605;
+}
+
+#systemOne {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Eras Light ITC';
+    font-size: 2.5em;
+    color: white;
+}
+
+#systemTwo {
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Eras Light ITC';
+    font-size: 3.5em;
+    color: white;
+}
+
+#systemThree {
+    z-index: 2;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    width: 90%;
+    text-align: center;
+    font-family: 'Eras Light ITC';
+    font-size: 2.5em;
+    color: white;
+}
+
+#equipment {
+    z-index: 2;
+    position: absolute;
+    top: 87%;
+    right: 10%;
+    margin-left: 50%;
+    width: 180%;
+    text-align: right;
+    font-family: 'Century Gothic';
+    font-size: 2.7em;
+    color: white;
+}
+
+#equipmentSpan {
+    background-color: #ff7605;
+    padding: 0.5% 1%;
+}
+
+main img {
+    width: 60%;
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+    mix-blend-mode: inherit;
+}
+
+#belowBanner {
+    width: 100%;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 2em;
+    margin: 3% auto 5%;
+}
+
+#fda {
+    color: #008CCC;
+}
+
+#ce {
+    color: #89AAD3;
+}
+
+.contentLeft p {
+    font-family: 'Eras Light ITC';
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-left: 5%;
+    width: 90%;
+    display: block;
+}
+
+#tip {
+    width: 60%;
+    color: #008CCC;
+    font-family: 'Eras Light ITC';
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-right: 5px #ff7605 solid;
+    display: inline-block;
+}
+
+.subTitle {
+    font-weight: 800;
+    margin-bottom: 1%;
+}
+
+#tip p {
+    width: 100%;
+    line-height: 150%;
+}
+
+#tipImage {
+    display: inline-block;
+    border: 3px #008CCC solid;
+    border-radius: 100%;
+    width: 15%;
+    position: relative;
+    left: 2%;
+    background-size: cover;
+    background: inherit;
+    background-image: none;
+}
+
+#mems {
+    width: 60%;
+    color: #008CCC;
+    font-family: 'Eras Light ITC';
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-right: 5px #ff7605 solid;
+    display: inline-block;
+}
+
+.subTitle {
+    font-weight: 800;
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+#mems p {
+    width: 100%;
+    line-height: 150%;
+    display: inline-block;
+}
+
+#memsImage {
+    display: inline-block;
+    border: 3px #008CCC solid;
+    border-radius: 100%;
+    width: 15%;
+    position: relative;
+    left: 2%;
+}
+
+#connection {
+    width: 60%;
+    color: #008CCC;
+    font-family: 'Eras Light ITC';
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-right: 5px #ff7605 solid;
+    display: inline-block;
+}
+
+.subTitle {
+    font-weight: 800;
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+#connection p {
+    width: 100%;
+    line-height: 150%;
+    display: inline-block;
+}
+
+#connectionImage {
+    display: inline-block;
+    border: 3px #008CCC solid;
+    border-radius: 100%;
+    width: 16%;
+    position: relative;
+    left: 2%;
+}
+
+#button {
+    width: 60%;
+    color: #008CCC;
+    font-family: 'Eras Light ITC';
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    border-right: 5px #ff7605 solid;
+    display: inline-block;
+}
+
+.subTitle {
+    font-weight: 800;
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+#button p {
+    width: 100%;
+    line-height: 150%;
+    display: inline-block;
+}
+
+#buttonImage {
+    display: inline-block;
+    border: 3px #008CCC solid;
+    border-radius: 100%;
+    width: 16%;
+    position: relative;
+    left: 2%;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #008ccc;
+}
+
+footer p {
+    font-family: 'ErasLightITC';
+    font-weight: 900;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.contentLeft {
+    display: inline-block;
+    width: 50%;
+    margin-left: 6%;
+}
+
+.contentRight {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin-left: 0%;
+}
+
+.contentRight h1 {
+    margin-bottom: 0%;
+    font-family: 'Century Gothic';
+    font-size: 2.7em;
+    color: #008CCC;
+    margin-bottom: 8%;
+}
+
+#quickLinks {
+    margin-bottom: 0%;
+    font-family: 'Eras Light ITC';
+    font-size: 2em;
+    color: #4D5B6B;
+    position: relative;
+    right: 15%;
+    margin-bottom: 5%;
+}
+
+.links {
+    color: white;
+    font-family: 'Century Gothic';
+    font-weight: 800;
+    font-size: 1.2em;
+    width: 60%;
+    margin: 0 auto 3%;
+}
+
+.links h2 {
+    margin-bottom: 11%;
+    background-color: #008CCC;
+    padding: 2%;
+}
+
+#questions {
+    font-family: 'Century Gothic';
+    font-size: 1.5em;
+    font-weight: 700;
+    width: fit-content;
+    margin: 0 0 3% 30%;
+}
+
+.questionsP {
+    font-family: 'Eras Light ITC';
+    font-weight: 800;
+    font-size: 1.3em;
+    width: fit-content;
+    margin: 0 0 4% 30%;
+    text-align: left;
+}
+
+.questionsP span {
+    color: #008CCC;
+}
+
+
+/*Media Queries */
+
+@media only screen and (max-width: 700px) {
+    nav {
+        font-size: 1.2em;
+        width: 75%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #systemOne, #systemTwo, #systemThree {
+        font-size: 2em;
+        right: 0;
+        left: 0;
+    }
+    #guidewire {
+        position: absolute;
+        right: 20%;
+        top: 11%;
+        width: 180%;
+        font-size: 2.5em;
+    }
+    #equipment {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #systemOne {
+        top: 55%;
+    }
+    #systemTwo {
+        top: 65%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #belowBanner {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #belowBanner {
+        font-size: 0.95em;
+    }
+}
+
+/*Dual Media Queries*/
+
+@media only screen and (max-width: 1500px) {
+    .contentLeft p {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    .contentRight h1 {
+        margin-bottom: 0%;
+        font-size: 1.8em;
+        margin-bottom: 6%;
+    }
+    #quickLinks {
+        margin-bottom: 0%;
+        font-size: 1.8em;
+        position: relative;
+        right: 15%;
+        margin-bottom: 2%;
+    }
+    .links {
+        font-weight: 800;
+        font-size: 1em;
+        width: 60%;
+        margin: 0 auto 2%;
+    }
+    .links h2 {
+        margin-bottom: 7%;
+        background-color: #008CCC;
+        padding: 1%;
+    }
+    #questions {
+        font-family: 'Century Gothic';
+        font-size: 1.2em;
+        font-weight: 700;
+        width: fit-content;
+        margin: 0 0 3% 30%;
+    }
+    .questionsP {
+        font-family: 'Eras Light ITC';
+        font-weight: 800;
+        font-size: 1.3em;
+        width: fit-content;
+        margin: 0 0 4% 30%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .questionsP {
+        font-family: 'Eras Light ITC';
+        font-weight: 800;
+        font-size: 1.2em;
+        width: fit-content;
+        margin: 0 0 4% 30%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .contentLeft p {
+        font-size: 1.1em;
+        font-weight: 800;
+    }
+    .contentRight h1 {
+        margin-bottom: 0%;
+        font-size: 1.8em;
+        margin-bottom: 8%;
+    }
+    #quickLinks {
+        margin-bottom: 0%;
+        font-size: 1.5em;
+        position: relative;
+        right: 15%;
+        margin-bottom: 2%;
+    }
+    .links {
+        font-weight: 800;
+        font-size: 0.9em;
+        width: 60%;
+        margin: 0 auto 2.5%;
+    }
+    .links h2 {
+        margin-bottom: 7%;
+        background-color: #008CCC;
+        padding: 1%;
+    }
+    #questions {
+        font-family: 'Century Gothic';
+        font-size: 1.2em;
+        font-weight: 700;
+        width: fit-content;
+        margin: 0 0 3% 30%;
+    }
+    .questionsP {
+        font-family: 'Eras Light ITC';
+        font-weight: 800;
+        font-size: 1em;
+        width: fit-content;
+        margin: 0 0 4% 30%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .contentLeft p {
+        font-size: 0.9em;
+        font-weight: 800;
+        text-align: center;
+    }
+    .contentRight h1 {
+        margin-bottom: 0%;
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+    #quickLinks {
+        margin-bottom: 0%;
+        font-size: 1.2em;
+        position: relative;
+        right: 15%;
+        margin-bottom: 2%;
+    }
+    .links {
+        font-weight: 800;
+        font-size: 0.7em;
+        width: 60%;
+        margin: 0 auto 2%;
+    }
+    .links h2 {
+        margin-bottom: 7%;
+        background-color: #008CCC;
+        padding: 1%;
+    }
+    #questions {
+        font-family: 'Century Gothic';
+        font-size: 1em;
+        font-weight: 700;
+        width: fit-content;
+        margin: 0 0 3% 30%;
+    }
+    .questionsP {
+        font-family: 'Eras Light ITC';
+        font-weight: 800;
+        font-size: 0.9em;
+        width: fit-content;
+        margin: 0 0 4% 30%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contentLeft {
+        width: 100%;
+    }
+    .contentRight {
+        width: 100%;
+    }
+    #quickLinks {
+        font-size: 1.2em;
+        width: fit-content;
+        left: 0%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    #questions {
+        font-size: 1em;
+        font-weight: 700;
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+    .questionsP {
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.2em;
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    #tip, #mems, #connection, #button {
+        font-size: 1.5em;
+    }
+
+    #world {
+       font-size: 1.2em;
+       margin-left: 0%;
+    }
+
+    #belowBanner {
+        font-size: 1.2em;
+     }
+}
+
+@media only screen and (max-width: 680px) {
+    #tip, #mems, #connection, #button {
+        font-size: 1em;
+    }
+
+    #world {
+        font-size: 0.85em;
+    }
+
+    #belowBanner {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        font-size: 0.9em;
+        display: block;
+    }
+
+    #logo {
+        height: 80px;
+        width: 100px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    .contentLeft p {
+        font-size: 0.7em;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    #questions {
+        font-size: 1em;
+        font-weight: 700;
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+    .questionsP {
+        text-align: center;
+        font-weight: 800;
+        font-size: 1em;
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    #tip, #mems, #connection, #button {
+        padding-right: 5%;
+    }
+
+    #world {
+        font-size: 0.7em;
+    }
+
+    #belowBanner {
+        font-size: 0.75em;
+    }
+}
