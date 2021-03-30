@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'Eras Light ITC';
+    src: url(../fonts/ErasLightITC.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+src: url(../fonts/GOTHIC.TTF) format('truetype');
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#question-mark {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:visited {
+    color: white;
+}
+
+header a:visited {
+    color: #4D5B6B;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    z-index: 2;
+}
+
+nav {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: 'Eras Light ITC';
+    width: 95%;
+    position: relative;
+    top: 35px;
+}
+
+nav h4 {
+    display: inline-block;
+    margin: 0 1.5%;
+    color: #4D5B6B;
+}
+
+.dropButton {
+    display: inline-block;
+    font-weight: 800;
+    color: #4D5B6B;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownContent a {
+    color: #4D5B6B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#face-shield {
+    padding: 5px 16px;
+    margin: 0;
+    line-height: 0.7em;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropButton {
+    background-color: #008CCC;
+}
+
+.dropButton-about {
+    display: inline-block;
+    font-weight: 800;
+    color: #4D5B6B;
+}
+
+.dropdown-about {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.dropdownContent-about {
+    display: none;
+    position: absolute;
+    background-color: #f1f1ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownContent-about a {
+    color: #4D5B6B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent-about a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-about:hover .dropdownContent-about {
+    display: block;
+}
+
+.dropdown-about:hover .dropButton-about {
+    background-color: #008CCC;
+}
+
+.temp {
+    font-size: 0.5em;
+}
+
+.background {
+    margin-top: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.banner {
+    background-color: #008CCC;
+    position: relative;
+    left: 5%;
+    width: 45%;
+    height: 650px;
+    display: inline-block;
+}
+
+.banner-left {
+    float: left;
+    width: 45%;
+    height: 500px;
+    background: url(../images/z_modeled.jpeg) no-repeat scroll;
+    background-size: 50%;
+    background-position: center 50%;
+}
+
+.order-now {
+    text-align: center;
+    width: 40%;
+    margin: 520px auto 0;
+    font-family: 'Eras Light ITC';
+    background-color: #008CCC;
+    padding: 2%;
+    color: white;
+}
+
+.order-now a {
+    color: white;
+}
+
+.payment {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-family: 'Eras Light ITC';
+    font-size: 1.2em;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    color: #4D5B6B;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.banner::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: skewX(-10deg);
+}
+
+#banner-title {
+    margin-top: 15%;
+    margin-left: 5%;
+    text-align: left;
+    font-family: 'Eras Light ITC';
+    font-size: 2.8em;
+    color: white;
+}
+
+#banner-protect {
+    margin-top: 7%;
+    margin-left: 10%;
+    width: 90%;
+    text-align: left;
+    font-family: 'Eras Light ITC';
+    font-size: 2.8em;
+    color: white;
+}
+
+#banner-subtitle {
+    margin-top: 7%;
+    margin-left: 15%;
+    text-align: left;
+    font-family: 'Eras Light ITC';
+    font-size: 2.8em;
+    color: white;
+}
+
+#banner-effort {
+    z-index: 2;
+    position: absolute;
+    top: 85%;
+    left: -40%;
+    width: 145%;
+    text-align: center;
+    font-family: 'Century Gothic';
+    /*font-size: 2.7em;*/
+    font-size: 2.9em;
+    color: white;
+}
+
+#banner-effort-span {
+    background-color: #ff7605;
+    padding: 0.5% 1%;
+}
+
+#banner-list {
+    width: 50%;
+    display: inline-block;
+    font-family: 'Eras Light ITC';
+    font-size: 1.2em;
+    line-height: 1.8em;
+    overflow-wrap: break-word;
+    word-wrap: normal;
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    color: #4D5B6B;
+}
+
+#link {
+    color: #4D5B6B;
+}
+
+.article-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.below-banner {
+    display: inline-block;
+    width: 100%;
+}
+
+.table-container {
+    display: inline-block;
+    margin: 3% auto 0;
+}
+
+.content-right {
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    margin-top: 4%;
+    margin-left: 7%;
+}
+
+.content-right img{
+    width: 45%;
+    margin: 0 1%;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #008ccc;
+}
+
+footer p {
+    font-family: 'Eras Light ITC';
+    font-weight: 900;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#doc {
+    float: right;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1650px) {
+    .order-now {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #banner-effort {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    .order-now {
+        margin-top: 90%;
+    }
+
+    #banner-effort {
+        font-size: 2em;
+    }
+
+    .payment {
+        width: 70%;
+        left: 15%;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #banner-list {
+        font-size: 1em;
+    }
+
+    .table {
+        font-size: 1em;
+    }
+
+    .payment {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #banner-title {
+        font-size: 1.9em;
+    }
+    
+    #banner-subtitle {
+        font-size: 1.9em;
+    }
+
+    #banner-protect {
+        font-size: 1.9em;
+    }
+
+    #banner-effort {
+        font-size: 1.8em;
+    }
+
+    .banner {
+        width: 50%;
+    }
+
+    .banner-left {
+        background-position-y: 25%;
+    }
+
+    .order-now {
+        width: 60%;
+    }
+
+    .payment {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #banner-title {
+        font-size: 1.8em;
+    }
+
+    #banner-list {
+        left: 0;
+    }
+
+    .table {
+        border-spacing: 1.6em 1em;
+        width: 120%;
+    }
+
+    .instructions-container {
+        display: block;
+        margin-bottom: 30%;
+    }
+
+    .content-right {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content-right img {
+        width: 30%;
+    }
+
+    #banner-list {
+        width: 80%;
+        text-align: left;
+    }
+
+    .below-banner {
+        text-align: center;
+    }
+
+    #banner-effort {
+        font-size: 1.45em;
+    }
+
+    .order-now {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        font-size: 1em;
+    }
+
+    .table {
+        font-size: 0.8em;
+    }
+
+    .banner {
+        left: 0;
+        width: 55%;
+        padding-left: 1%;
+    }
+    
+    .order-now {
+        margin-top: 110%;
+    }
+
+    .banner::after {
+        background-color: white;
+    }
+
+    #banner-title {
+        margin-left: 10%;
+    }
+
+    #banner-subtitle {
+        margin-left: 10%;
+    }
+
+    #banner-effort {
+        left: -80%;
+        width: 180%;
+    }
+    
+    .order-now {
+        font-size: 1.6em;
+        width: 90%;
+    }
+    
+    .payment {
+        width: 100%;
+        font-size: 0.9em;
+        margin-top: 20%;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        display: block;
+        max-width: 40%;
+        float: right;
+        right: 20px;
+    }
+
+    #banner-title {
+        font-size: 1.15em;
+    }
+
+    #banner-subtitle {
+        font-size: 1.2em;
+    }
+
+    #banner-protect {
+        font-size: 1.2em;
+    }
+
+    .banner-left {
+        background-position-y: 10%;
+    }
+
+    .notes-list {
+        font-size: 0.8em;
+    }
+
+    .payment {
+        font-size: 1em;
+    }
+
+    .instructions-container {
+        margin-left: 10%;
+    }
+
+    .dropdownContent {
+        right: 1px;
+        z-index: 3;
+     }
+ 
+     .dropdownContent-about {
+         right: 1px;
+         z-index: 3;
+     }
+}

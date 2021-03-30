@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'Eras Light ITC';
+    src: url('../fonts/ErasLightITC.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/GOTHIC.TTF') format('truetype');
+}
+
+a[href^=tel] {
+    text-decoration:inherit;
+    color: inherit;
+ }
+
+ html {
+    position: relative;
+    min-height: 100%;
+}
+
+#question-mark {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header a:visited {
+    color: #4D5B6B;
+}
+
+h4:visited {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    z-index: 2;
+}
+
+nav {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: 'Eras Light ITC';
+    width: 95%;
+    position: relative;
+    top: 35px;
+}
+
+nav h4 {
+    display: inline-block;
+    margin: 0 1.5%;
+    color: #4D5B6B;
+}
+
+.dropButton {
+    display: inline-block;
+    font-weight: 800;
+    color: #4D5B6B;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownContent a {
+    color: #4D5B6B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#face-shield {
+    padding: 5px 16px;
+    margin: 0;
+    line-height: 0.7em;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropButton {
+    background-color: #008CCC;
+}
+
+.dropButton-about {
+    display: inline-block;
+    font-weight: 800;
+    color: #4D5B6B;
+}
+
+.dropdown-about {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.dropdownContent-about {
+    display: none;
+    position: absolute;
+    background-color: #f1f1ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownContent-about a {
+    color: #4D5B6B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent-about a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-about:hover .dropdownContent-about {
+    display: block;
+}
+
+.dropdown-about:hover .dropButton-about {
+    background-color: #008CCC;
+}
+
+.temp {
+    font-size: 0.5em;
+}
+
+h1 {
+    font-family: 'Century Gothic';
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 2.6em;
+    width: fit-content;
+    margin: 0 auto;
+    color: #4D5B6B;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    line-height: 2;
+}
+
+.zurichInfo {
+    width: 19%;
+    height: 300px;
+    background-color: #008ccc;
+    display: inline-block;
+    position: relative;
+    padding: 1.8%;
+    margin: auto 1% 2%;
+    font-size: 1.3em;
+    color: white;
+}
+
+.additionalInfo {
+    width: 19%;
+    height: 300px;
+    background-color: #008ccc;
+    display: inline-block;
+    position: relative;
+    padding: 1.8%;
+    margin: auto 0 2% 1%;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+}
+
+.container h4 {
+    font-family: 'Eras Light ITC';
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+h4 {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+main img {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #008ccc;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer p {
+    font-family: 'Eras Light ITC';
+    font-weight: 900;
+    position: relative;
+    left: 10px;
+    bottom: 6px;
+}
+
+#doc {
+    float: right;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .zurichInfo {
+        font-size: 1.2em;
+    }
+    .additionalInfo {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .zurichInfo {
+        font-size: 1.2em;
+        width: 26%;
+    }
+    .additionalInfo {
+        font-size: 1.2em;
+        width: 26%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .zurichInfo {
+        font-size: 0.9em;
+        margin-right: 3%;
+        line-height: 3;
+        width: 28%;
+    }
+    .additionalInfo {
+        font-size: 0.9em;
+        margin-left: 3%;
+        line-height: 3;
+        width: 28%;
+    }
+    #logo {
+        margin: 0 auto;
+    }
+
+    main img {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .zurichInfo {
+        font-size: 0.9em;
+        margin-right: 3%;
+        line-height: 3;
+        width: 34%;
+    }
+    .additionalInfo {
+        font-size: 0.9em;
+        margin-left: 3%;
+        line-height: 3;
+        width: 34%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .zurichInfo {
+        font-size: 0.9em;
+        margin-right: 3%;
+        line-height: 3;
+        width: 40%;
+    }
+    .additionalInfo {
+        font-size: 0.9em;
+        margin-left: 3%;
+        line-height: 3;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .zurichInfo {
+        font-size: 0.8em;
+        margin-right: 3%;
+        line-height: 3;
+        width: 80%;
+        display: block;
+        height: 20%;
+        margin: 0  auto;
+    }
+    
+    .additionalInfo {
+        font-size: 0.8em;
+        margin-left: 3%;
+        line-height: 3;
+        width: 80%;
+        display: block;
+        height: 20%;
+        margin: 2% auto 0;
+    }
+
+    main img {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 20%;
+    }
+
+    nav{
+        display: block;
+        float: right;
+        font-size: 1em;
+        right: 20px;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        display: block;
+        max-width: 40%;
+        float: right;
+        font-size: 1em;
+        right: 20px;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    .dropdownContent {
+        right: 1px;
+        z-index: 3;
+     }
+ 
+     .dropdownContent-about {
+         right: 1px;
+         z-index: 3;
+     }
+}
+
+@media only screen  and (max-height: 620px) {
+    footer {
+        position: relative;
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-height: 670px) and (max-width: 530px) {
+    footer{ 
+        position: relative;
+        margin-top: 30%;
+    }
+}
