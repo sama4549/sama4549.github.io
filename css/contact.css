@@ -8,6 +8,12 @@
     src: url('../fonts/GOTHIC.TTF') format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 a[href^=tel] {
     text-decoration:inherit;
     color: inherit;
@@ -150,70 +156,59 @@ nav h4 {
     font-size: 0.5em;
 }
 
-h1 {
-    font-family: 'Century Gothic';
-    position: relative;
-    top: 30px;
-    text-align: center;
-    font-size: 2.6em;
-    width: fit-content;
-    margin: 0 auto;
-    color: #4D5B6B;
-}
-
+/* Main Content */
 .container {
-    width: 100%;
-    position: relative;
-    top: 70px;
-    text-align: center;
-    line-height: 2;
-}
-
-.zurichInfo {
-    width: 19%;
-    height: 300px;
-    background-color: #008ccc;
-    display: inline-block;
-    position: relative;
-    padding: 1.8%;
-    margin: auto 1% 2%;
-    font-size: 1.3em;
-    color: white;
-}
-
-.additionalInfo {
-    width: 19%;
-    height: 300px;
-    background-color: #008ccc;
-    display: inline-block;
-    position: relative;
-    padding: 1.8%;
-    margin: auto 0 2% 1%;
-    font-size: 1.3em;
-    color: white;
-    text-decoration: none;
-}
-
-.container h4 {
     font-family: 'Eras Light ITC';
-    width: 100%;
+    color: #4D5B6B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    position: relative;
-    border-bottom: none;
-    text-decoration: none;
+    margin-top: 50px;
+    max-width: 100vw;
 }
 
-h4 {
-    border-bottom: none;
-    text-decoration: none;
+.container h1 {
+    margin-bottom: 20px;
 }
 
-main img {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 25%;
+.container-left {
+    padding: 30px;
 }
 
+.container-right {
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+.content-left {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.content-left .card:nth-child(1) {
+    border-right: #fff 3px solid;
+}
+
+.card {
+    background-color: #008CCC;
+    padding: 40px;
+    color: #fff;
+    height: 300px;
+}
+
+.card ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+.card ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+/* Footer */
 footer {
     width: 100%;
     height: 40px;
@@ -229,7 +224,7 @@ footer p {
     font-weight: 900;
     position: relative;
     left: 10px;
-    bottom: 6px;
+    top: 10px;
 }
 
 #doc {
@@ -237,104 +232,52 @@ footer p {
     margin-right: 20px;
 }
 
-@media only screen and (max-width: 1500px) {
-    .zurichInfo {
-        font-size: 1.2em;
-    }
-    .additionalInfo {
-        font-size: 1.2em;
-    }
-}
+/* Media Queries */
 
-@media only screen and (max-width: 1300px) {
-    .zurichInfo {
-        font-size: 1.2em;
-        width: 26%;
+@media(max-width: 1130px) {
+    .container h1 {
+        font-size: 22px;
     }
-    .additionalInfo {
-        font-size: 1.2em;
-        width: 26%;
+
+    .card ul li {
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .zurichInfo {
-        font-size: 0.9em;
-        margin-right: 3%;
-        line-height: 3;
-        width: 28%;
-    }
-    .additionalInfo {
-        font-size: 0.9em;
-        margin-left: 3%;
-        line-height: 3;
-        width: 28%;
-    }
+
     #logo {
         margin: 0 auto;
     }
 
-    main img {
-        margin-top: 15%;
+
+}
+
+@media(max-width: 890px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content-left {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .card ul li {
+        font-size: 22px;
     }
 }
 
-@media only screen and (max-width: 780px) {
-    .zurichInfo {
-        font-size: 0.9em;
-        margin-right: 3%;
-        line-height: 3;
-        width: 34%;
-    }
-    .additionalInfo {
-        font-size: 0.9em;
-        margin-left: 3%;
-        line-height: 3;
-        width: 34%;
-    }
-}
 
-@media only screen and (max-width: 700px) {
-    .zurichInfo {
-        font-size: 0.9em;
-        margin-right: 3%;
-        line-height: 3;
-        width: 40%;
-    }
-    .additionalInfo {
-        font-size: 0.9em;
-        margin-left: 3%;
-        line-height: 3;
-        width: 40%;
-    }
-}
 
 @media only screen and (max-width: 600px) {
-    .zurichInfo {
-        font-size: 0.8em;
-        margin-right: 3%;
-        line-height: 3;
-        width: 80%;
-        display: block;
-        height: 20%;
-        margin: 0  auto;
-    }
-    
-    .additionalInfo {
-        font-size: 0.8em;
-        margin-left: 3%;
-        line-height: 3;
-        width: 80%;
-        display: block;
-        height: 20%;
-        margin: 2% auto 0;
-    }
-
-    main img {
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 20%;
-    }
 
     nav{
         display: block;
