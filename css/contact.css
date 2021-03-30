@@ -329,3 +329,16 @@ footer p {
         margin-top: 30%;
     }
 }
+
+/* Cell Phones */
+@media(max-width: 400px) {
+    .card ul li {
+        font-size: 19px;
+    }
+} 
+
+@media(max-width: 290px) {
+    .card ul li {
+        font-size: 12px;
+    }
+}
