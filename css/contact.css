@@ -234,7 +234,7 @@ footer p {
 
 /* Media Queries */
 
-@media(max-width: 1130px) {
+@media(max-width: 1180px) {
     .container h1 {
         font-size: 22px;
     }
@@ -253,7 +253,7 @@ footer p {
 
 }
 
-@media(max-width: 890px) {
+@media(max-width: 910px) {
     .container {
         flex-direction: column;
     }
@@ -266,12 +266,22 @@ footer p {
         margin-bottom: 50px;
     }
 
+    .content-right .card {
+        width: 85%;
+        margin: 0 auto;
+    }
+
     .container h1 {
         font-size: 32px;
     }
 
     .card ul li {
         font-size: 22px;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 10%;
     }
 }
 
@@ -286,10 +296,7 @@ footer p {
         right: 20px;
     }
 
-    footer {
-        position: relative;
-        margin-top: 40%;
-    }
+   
 }
 
 @media only screen and (max-width: 480px) {
@@ -331,14 +338,32 @@ footer p {
 }
 
 /* Cell Phones */
+@media(max-width: 415px) {
+    .content-right .card {
+        width: 100%;
+    }
+}
+
 @media(max-width: 400px) {
     .card ul li {
         font-size: 19px;
+    }
+
+    .container h1 {
+        font-size: 26px;
     }
 } 
 
 @media(max-width: 290px) {
     .card ul li {
         font-size: 12px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        font-size: 0.7em;
     }
 }
