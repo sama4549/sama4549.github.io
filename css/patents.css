@@ -8,6 +8,12 @@
     src: url('../fonts/GOTHIC.TTF') format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 a[href^=tel] {
     text-decoration:inherit;
     color: inherit;
@@ -150,6 +156,9 @@ nav h4 {
     font-size: 0.5em;
 }
 
+
+/* Main Content */
+
 h1 {
     font-family: 'Century Gothic';
     position: relative;
@@ -162,43 +171,37 @@ h1 {
 }
 
 .container {
-    width: 100%;
-    position: relative;
-    top: 70px;
+    display: flex;
+    margin-top: 65px;
+    flex-shrink: 1;
+}
+
+.container .mobile {
+    display: none;
 }
 
 .additionalInfo {
-    width: 28vw;
-    height: 250px;
     background-color: #008ccc;
-    position: relative;
-    padding: 1.8%;
+    padding: 40px;
     margin: 0 auto 2%;
     font-size: 1.3em;
     color: white;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-shrink: 2;
-}
-
-.container h4 {
-    font-family: 'Eras Light ITC';
-    width: 100%;
-    position: relative;
-    border-bottom: none;
-    text-decoration: none;
-    font-size: 80%;
-    margin-top: 0;
-}
-
-h4 {
-    border-bottom: none;
-    text-decoration: none;
-    width: fit-content;
     text-align: center;
+}
+
+.card ul {
+    list-style: none;
+    line-height: 3.4;
+    font-family: 'Eras Light ITC';
+    font-weight: 600;
+}
+
+.card ul li {
+    font-size: 1rem;
 }
 
 main img {
@@ -206,6 +209,8 @@ main img {
     margin-top: 5%;
     margin-left: 25%;
 }
+
+/* Footer */
 
 footer {
     width: 100%;
@@ -222,7 +227,7 @@ footer p {
     font-weight: 900;
     position: relative;
     left: 10px;
-    bottom: 6px;
+    top: 10px;
 }
 
 #doc {
@@ -230,35 +235,10 @@ footer p {
     margin-right: 20px;
 }
 
-@media only screen and (max-width: 1550px) {
-    .zurichInfo {
-        font-size: 1.2em;
-    }
-    .additionalInfo {
-        font-size: 1.2em;
-    }
-}
+/* Media Queries */
 
-@media only screen and (max-width: 1400px) {
-    .zurichInfo {
-        font-size: 1.2em;
-        width: 26%;
-    }
-    .additionalInfo {
-        width: 35vw;
-    }
-}
 
 @media only screen and (max-width: 1150px) {
-    .zurichInfo {
-        font-size: 0.9em;
-        margin-right: 3%;
-        line-height: 3;
-        width: 28%;
-    }
-    .additionalInfo {
-        width: 40vw;
-    }
     #logo {
         margin: 0 auto;
     }
@@ -268,39 +248,13 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 930px) {
-    .additionalInfo {
-        font-size: 1em;
-        width: 43vw;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    .zurichInfo {
-        font-size: 0.9em;
-        margin-right: 3%;
-        line-height: 3;
-        width: 34%;
-    }
-
-    .additionalInfo {
-        font-size: 0.9em;
-        width: 50vw;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .zurichInfo {
-        font-size: 0.9em;
-        margin-right: 3%;
-        width: 40%;
+@media(max-width: 800px) {
+    .container ul li {
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .additionalInfo {
-        width: 60vw;
-    }
 
     main img {
         width: 70%;
@@ -329,11 +283,6 @@ footer p {
         color: white;
     }
 
-    footer {
-        position: relative;
-        margin-top: 60%;
-    }
-
     .dropdownContent {
         right: 1px;
         z-index: 3;
@@ -344,30 +293,9 @@ footer p {
          z-index: 3;
      }
 
-     .additionalInfo {
-        width: 70vw;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .additionalInfo {
-        font-size: 0.8em;
-        width: 75vw;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .additionalInfo {
-        font-size: 0.8em;
-        width: 85vw;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .additionalInfo {
-        font-size: 0.7em;
-        width: 90vw;
-    }
+     .container ul li {
+         font-size: 0.65rem;
+     }
 }
 
 @media only screen  and (max-height: 600px) {
@@ -377,31 +305,39 @@ footer p {
     }
 }
 
-@media only screen and (max-height: 600px) and (max-width: 700px) {
-    .additionalInfo {
-        width: 65vw;
-    }
-}
-
 @media only screen and (max-height: 600px) and (max-width: 530px) {
     footer{ 
         position: relative;
         margin-top: 30%;
     }
+}
 
-    .additionalInfo {
-        width: 70vw;
+/* Mobile */
+
+@media(max-width: 430px) {
+    .container {
+        margin-bottom: 80px;
+    }
+
+    .container .desktop {
+        display: none;
+    }
+
+    .container .mobile {
+        display: block;
+    }
+
+    .container ul li {
+        font-size: 1rem;
+    }
+
+    .container .card {
+        max-width: 80%;
     }
 }
 
-@media only screen and (max-height: 600px) and (max-width: 500px) {
-    .additionalInfo {
-        width: 75vw;
-    }
-}
-
-@media only screen and (max-height: 600px) and (max-width: 400px) {
-    .additionalInfo {
-        width: 80vw;
+@media(max-width: 295px) {
+    .container ul li {
+        font-size: 0.85rem;
     }
 }
