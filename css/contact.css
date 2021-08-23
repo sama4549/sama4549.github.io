@@ -203,6 +203,7 @@ nav h4 {
     background-color: #008CCC;
     padding: 40px;
     color: #fff;
+    width: 500px;
 }
 
 .card ul {
@@ -255,7 +256,15 @@ footer p {
     }
 
     .card ul li {
-        font-size: 16px;
+        font-size: 1.3rem;
+    }
+
+    .container-right .card ul li {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        width: 450px;
     }
 }
 
@@ -264,11 +273,9 @@ footer p {
     #logo {
         margin: 0 auto;
     }
-
-
 }
 
-@media(max-width: 910px) {
+@media(max-width: 1000px) {
     .container {
         flex-direction: column;
     }
@@ -279,6 +286,8 @@ footer p {
 
     .card {
         margin-bottom: 50px;
+        width: 400px;
+        margin: auto;
     }
 
     .content-right .card {
@@ -291,7 +300,16 @@ footer p {
     }
 
     .card ul li {
-        font-size: 22px;
+        font-size: 1.3rem;
+    }
+
+    .container-right .card ul li {
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+
+    .container-rep:nth-child(2) {
+        margin-top: 10%;
     }
 
     footer {
@@ -336,6 +354,14 @@ footer p {
          right: 1px;
          z-index: 3;
      }
+
+     .card {
+         width: 300px;
+     }
+
+     .container-rep:nth-child(2) {
+        margin-top: 15%;
+    }
 }
 
 @media only screen  and (max-height: 620px) {
@@ -356,7 +382,7 @@ footer p {
 
 @media(max-width: 540px) {
     .container-rep:nth-child(2) {
-        margin-top: 10%;
+        margin-top: 15%;
     }
 }
 
@@ -366,13 +392,17 @@ footer p {
     }
 
     .container-rep:nth-child(2) {
-        margin-top: 10%;
+        margin-top: 20%;
     }
 }
 
 @media(max-width: 400px) {
     .card ul li {
-        font-size: 19px;
+        font-size: 1rem;
+    }
+
+    .container-right .card ul li {
+        font-size: 1rem;
     }
 
     .container h1 {
@@ -388,7 +418,11 @@ footer p {
 
 @media(max-width: 290px) {
     .card ul li {
-        font-size: 12px;
+        font-size: 1rem;
+    }
+
+    .container-right .card ul li {
+        font-size: 1rem;
     }
 
     .container h1 {
