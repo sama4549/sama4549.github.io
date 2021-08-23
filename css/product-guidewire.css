@@ -8,10 +8,16 @@
 src: url(../fonts/GOTHIC.TTF) format('truetype');
 }
 
+/* Reset */
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+}
+
+/* Universal Styling */
+p {
+    font-family: 'Eras Light ITC';
 }
 
 #question-mark {
@@ -21,6 +27,8 @@ box-sizing: border-box;
 header a:visited {
     color: #4D5B6B;
 }
+
+/* Navbar */
 
 header {
     width: 100%;
@@ -431,6 +439,8 @@ main img {
     margin-left: 6%;
 }
 
+/* Right Side Content */
+
 .contentRight {
     display: inline-block;
     width: 40%;
@@ -493,21 +503,21 @@ main img {
     color: #4D5B6B;
 }
 
-.questionsP {
+.questions-container p {
     font-family: 'Eras Light ITC';
     font-weight: 800;
     font-size: 1em;
     width: 100%;
-    margin: 0 0 4%;
+    margin: 0 0;
     text-align: left;
     color: #4D5B6B;
 }
 
-.questionsP span {
+.questions-container span {
     color: #008CCC;
 }
 
-.questionsP a {
+.questions-container a {
     border-bottom: none;
     text-decoration: none;
 }
@@ -519,6 +529,23 @@ main img {
 #question-mark {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.prop-65-container p{
+    color: #4D5B6B;
+    font-weight: 800;
+}
+
+.prop-65-container p .warning {
+    text-transform: uppercase;
+    color: #4D5B6B;
+    font-family: 'Century Gothic';
+}
+
+.prop-65-container p .warning-symbol {
+    font-size: 1rem;
+}
+
+/* Footer */
 
 footer {
     width: 100%;
