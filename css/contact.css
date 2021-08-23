@@ -353,9 +353,20 @@ footer p {
 }
 
 /* Cell Phones */
+
+@media(max-width: 540px) {
+    .container-rep:nth-child(2) {
+        margin-top: 10%;
+    }
+}
+
 @media(max-width: 415px) {
     .content-right .card {
         width: 100%;
+    }
+
+    .container-rep:nth-child(2) {
+        margin-top: 10%;
     }
 }
 
@@ -368,6 +379,12 @@ footer p {
         font-size: 26px;
     }
 } 
+
+@media(max-width: 320px) {
+    .container-rep:nth-child(2) {
+        margin-top: 30%;
+    }
+}
 
 @media(max-width: 290px) {
     .card ul li {
