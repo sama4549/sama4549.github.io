@@ -1,0 +1,640 @@
+@font-face {
+    font-family: 'Eras Light ITC';
+    src: url('../fonts/ErasLightITC.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../fonts/GOTHIC.TTF) format('truetype');
+}
+
+#question-mark {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header a:visited {
+    color: #4D5B6B;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    z-index: 2;
+}
+
+nav {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: 'Eras Light ITC';
+    width: 95%;
+    position: relative;
+    top: 35px;
+}
+
+nav h4 {
+    display: inline-block;
+    margin: 0 1.5%;
+    color: #4D5B6B;
+}
+
+.dropButton {
+    display: inline-block;
+    font-weight: 800;
+    color: #4D5B6B;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownContent a {
+    color: #4D5B6B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#face-shield {
+    padding: 5px 16px;
+    margin: 0;
+    line-height: 0.7em;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover .dropButton {
+    background-color: #008CCC;
+}
+
+.dropButton-about {
+    display: inline-block;
+    font-weight: 800;
+    color: #4D5B6B;
+}
+
+.dropdown-about {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.dropdownContent-about {
+    display: none;
+    position: absolute;
+    background-color: #f1f1ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownContent-about a {
+    color: #4D5B6B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent-about a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-about:hover .dropdownContent-about {
+    display: block;
+}
+
+.dropdown-about:hover .dropButton-about {
+    background-color: #008CCC;
+}
+
+.temp {
+    font-size: 0.5em;
+}
+
+.background {
+    background: url(../images/Cropped\ Picture\ of\ Doctor.jpg) no-repeat scroll;
+    background-size: contain;
+    background-position: 80%;
+    width: 100%;
+}
+
+.banner {
+    background-color: #008CCC;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    display: inline-block;
+    z-index: -1;
+}
+
+.banner-left {
+    float: left;
+    width: 10%;
+    height: 200px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+/*.banner::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: 100% 100%;
+    transform: skewX(40deg);
+}*/
+
+.banner h1 {
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 3.5rem;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+/*.title {
+    float: left;
+    font-family: 'Eras Light ITC';
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #008CCC;
+    text-align: center;
+    margin-right: 2%;
+    padding-top: 100px;
+    width: 10%;
+}*/
+
+/*#title-introduction {
+    border-right: #008CCC solid 5px;
+    height: 600px;
+}*/
+
+.introduction {
+    border-left: #008CCC solid 5px;
+    margin-left: 10vw;
+}
+
+.p {
+    font-family: 'Eras Light ITC';
+    font-size: 1.5rem;
+    color: #4D5B6B;
+    padding-left: 5%;
+}
+
+#first-p {
+    padding-top: 2%;
+}
+
+.sub-title {
+    font-family: 'Eras Light ITC';
+    font-size: 2.5rem;
+    color: #008CCC;
+    font-weight: 800;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+
+.references {
+    padding-left: 5%;
+    width: 100%;
+}
+
+.references-p {
+    display: inline-block;
+    font-family: 'Eras Light ITC';
+    font-size: 1.5rem;
+    color: #4D5B6B;
+}
+
+.introduction a {
+    text-decoration: none;
+    font-family: 'Eras Light ITC';
+    display: block;
+    color: #008CCC;
+}
+
+.image-container {
+    padding-left: 5%;
+}
+
+.introduction a:visited {
+    color: #008CCC;
+}
+
+#artery {
+    width: 40%;
+    display: block;
+}
+
+#equation {
+    width: 25%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.table-container {
+    display: table;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.reimbursement-table-container > table {
+    border: solid black 2px;
+    border-collapse: collapse;
+    margin-left: 5%;
+    max-width: 60vw;
+}
+
+.reimbursement-table-container table tr td {
+    border: solid black 2px;
+    padding: 10px 20px;
+    font-family: 'Eras Light ITC';
+    font-weight: 600;
+}
+
+sup {
+    font-size: 10px;
+}
+
+.blue {
+    background-color: #008CCC;
+    color: #f1f1ff;
+}
+
+.light-blue {
+    background-color: #89AAD3;
+    color: #f1f1ff;
+}
+
+.table-title {
+    font-family: 'Century Gothic';
+    color: #4D5B6B;
+    font-size: 2rem;
+}
+
+#fame-one-table, #fame-two-table {
+    font-family: 'Eras Light ITC';
+    color: #4D5B6B;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+#fame-one-table th, #fame-one-table td {
+    border: 2px solid #4D5B6B;
+}
+
+#fame-two-table th, #fame-two-table td {
+    border: 2px solid #4D5B6B;
+}
+
+.nowrap {
+    white-space: nowrap;
+    padding: 5px;
+    text-align: center;
+}
+
+#patients {
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+
+.asterisk, .end-point {
+    font-family: 'Eras Light ITC';
+    color: #4D5B6B;
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+.fame-one a:visited {
+    color: blue;
+}
+
+.fame-two a, .fame-one a {
+    font-family: 'Eras Light ITC';
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+.fame-two a:visited {
+    color: blue;
+}
+
+.supplemental {
+    margin-top: 1%;
+    font-size: 1rem;
+}
+
+.references p {
+    color: #4D5B6B;
+    font-family: 'Eras Light ITC';
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.references a {
+    padding: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 7%;
+    height: 40px;
+    background-color: #008ccc;
+}
+
+footer p {
+    font-family: 'Eras Light ITC';
+    font-weight: 900;
+    position: relative;
+    width: 100%;
+    left: 10px;
+    top: 10px;
+}
+
+#doc {
+    float: right;
+    margin-right: 20px;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 1700px) {
+    #lower {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .title {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1rem;
+        width: 10%;
+    }
+}
+
+/*move background to the right, shrink title*/
+@media only screen and (max-width: 1200px) {
+    .background {
+        background-position: 90%;
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+        margin-left: 10%;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    footer {
+        margin-top: 15%;
+    }
+}
+
+/*Make the Titles above the text*/
+@media only screen and (max-width: 1020px) {
+    #title-introduction {
+        border-right: none;
+        height: 50px;
+        display: block;
+        float: none;
+        width: 80%;
+        text-align: center;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+    
+    .fame-one {
+        margin-top: 5%;
+        padding-bottom: 30%;
+    }
+
+    .fame-two {
+        margin-bottom: 2%;
+    }
+
+    .title {
+        display: block;
+        padding-bottom: 5%;
+    }
+
+    #artery {
+        display: inline-block;
+        width: 40%;
+    }
+
+    #equation {
+        width: 40%;
+        padding-left: 5%;
+    }
+
+    .image-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sub-title {
+        margin-bottom: 0;
+        font-size: 2rem;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }  
+}
+
+@media only screen and (max-width: 950px) {
+    .end-point-link {
+        font-size: 0.9em;
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .references, .references-p {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .sub-references {
+        margin: 0 auto;
+    }
+}
+
+/*move background all the way to the right*/
+@media only screen and (max-width: 900px) {
+    .background {
+        background-position: 100%;
+    }
+}
+
+/*move title more to the left and make smaller*/
+@media only screen and (max-width: 800px) {
+    .banner h1 {
+        margin-left: 25px;
+        margin-top: 13%;
+        font-size: 2rem;
+    }
+
+    footer {
+        margin-top: 17%;
+    }
+}
+
+/*shrink navigation bar, get rid of background image*/
+@media only screen and (max-width: 690px) {
+    nav {
+        font-size: 1em;
+    }
+
+    .background {
+        background-image: none;
+    }
+
+    .banner h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .banner::after {
+        display: none;
+    }
+
+    .banner-left {
+        width: 5%;
+    }
+
+    .introduction {
+        border-left: none;
+        margin-left: 0;
+    }
+
+    .sub-title {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin-top: 20%;
+    }
+}
+
+/*Mobile Screens*/
+
+@media only screen and (max-width: 500px) {
+    footer {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        display: block;
+        max-width: 40%;
+        float: right;
+        font-size: 1em;
+        right: 20px;
+    }
+
+    .dropdownContent {
+        right: 1px;
+        z-index: 3;
+     }
+ 
+     .dropdownContent-about {
+         right: 1px;
+         z-index: 3;
+     }
+    
+    #qca {
+        width: 20px;
+    }
+
+    footer {
+        margin-top: 60%;
+    }
+
+    .asterisk, .end-point {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #title-introduction {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    footer {
+        margin-top: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    footer {
+        margin-top: 140%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    footer {
+        margin-top: 170%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) and (min-device-width: 319px) 
+and (max-device-width: 480px) {
+    .end-point {
+        font-size: 0.5rem;
+    }
+
+    .end-point-link, .onee {
+        font-size: 0.5rem;
+    }
+}
