@@ -332,11 +332,20 @@ footer p {
         margin-top: 10px;
     }
 
+    .references {
+        margin: 0 auto;
+        padding-right: 10px;
+        text-align: center;
+    }
+
     .references, .references-p {
         display: block;
-        margin: 0 auto;
-        text-align: center;
         width: fit-content;
+    }
+
+    #first-p {
+        padding-right: 10px;
+        text-align: center;
     }
 }
 
@@ -434,7 +443,7 @@ footer p {
     }
 }
 
-/* Shrink Reimbursement Title */
+/* Shrink Reimbursement Title, shrink references text */
 @media only screen and (max-width: 450px) {
     
     .banner {
@@ -444,6 +453,10 @@ footer p {
     .banner h1 {
         font-size: 2rem;
         margin: 20% auto;
+    }
+
+    .references {
+        font-size: 0.7rem;
     }
 }
 
