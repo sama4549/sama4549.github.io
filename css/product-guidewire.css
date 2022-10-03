@@ -494,6 +494,58 @@ main img {
     margin-top: 10%;
 }
 
+.quote-container {
+    background-color: #008CCC;
+    position: relative;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15% 8%;
+    border-radius: 10%;
+    width: 100%;
+    height: 250px;
+    gap: 80px;
+}
+
+.quote-image {
+    color: #f1f1ff;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.quote-image p {
+    width: 150%;
+}
+
+.quote-image img {
+    margin-bottom: 5px;
+    width: 110px;
+    border: solid black 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.quote-image p:nth-child(2) {
+    font-size: 1.2em;
+}
+
+.quote {
+    text-align: left;
+}
+
+.quote p {
+    font-size: 1.2em;
+    color: #f1f1ff;
+}
+
+.quote p:nth-child(2) {
+    margin-top: 10px;
+}
+
 #questions {
     font-family: 'Century Gothic';
     font-size: 1.5em;
@@ -612,6 +664,147 @@ footer p {
         font-size: 1.4em;
     }
 }
+
+/* Media Queries for Quote section */
+
+@media only screen and (max-width: 1550px) {
+    .quote p {
+        font-size: 1em;
+    }
+
+    .quote-image {
+        font-size: 0.7em;
+    }
+
+    .quote-image img {
+       width: 100px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .quote-image {
+        font-size: 0.6em;
+    }
+
+    .quote-image img {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .quote p {
+        font-size: .8em;
+    }
+
+    .quote-image {
+        font-size: 0.6em;
+    }
+
+    .quote-image img {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    .quote-container {
+        width: 65%;
+        margin: 10% auto;
+    }
+    
+    .quote p {
+        font-size: 1.1em;
+    }
+
+    .quote-image {
+        font-size: 0.8em;
+    }
+
+    .quote-image img {
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 932px) {  
+    .quote p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 750px) {  
+    .quote p {
+        font-size: 0.8em;
+    }
+    
+    .quote-image {
+        font-size: 0.6em;
+    }
+
+    .quote-image img {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+    .quote-container {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .quote p {
+        font-size: 0.8em;
+    }
+    
+    .quote-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 0.8em;
+        gap: 10px;
+    }
+
+    .quote-image p:nth-child(1) {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 510px) {  
+    .quote-image {
+        font-size: 0.7em;
+    }
+
+    .quote-image img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 400px) {  
+    .quote p {
+        font-size: 0.7em;
+    }
+    
+    .quote-image {
+        font-size: 0.6em;
+    }
+
+    .quote-image img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 350px) {  
+    .quote-container {
+        height: 100%;
+    }
+    
+    .quote-image {
+        flex-direction: column;
+    }
+}
+
+
 
 /*Dual Media Queries*/
 
