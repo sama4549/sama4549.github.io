@@ -508,6 +508,10 @@ main img {
     gap: 80px;
 }
 
+#quote-container-small {
+    display: none;
+}
+
 .quote-image {
     color: #f1f1ff;
     width: 100%;
@@ -526,11 +530,6 @@ main img {
     position: relative;
     top: 0;
     left: 0;
-}
-
-
-.quote-image p:nth-child(2) {
-    font-size: 1.2em;
 }
 
 .quote {
@@ -710,6 +709,14 @@ footer p {
     .quote-container {
         width: 65%;
         margin: 10% auto;
+    }
+
+    #quote-container-big {
+        display: none;
+    }
+
+    #quote-container-small {
+        display: flex;
     }
     
     .quote p {
